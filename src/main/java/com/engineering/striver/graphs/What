@@ -1,0 +1,64 @@
+Graph : Non Linear data structure with set of nodes which connected by edge
+- Undirected Graph - bidirectional edge - cyclic
+- Directed Graph - unidirectional edge - not cyclic
+
+cyclic : start at point A to end at point A
+if graph is cyclic -> enclosed graph
+
+path : distance from one node to another -> same node cannot appear twice in a path
+
+Degree of undirected graph : number of edges connecting the node
+Degree of Directed graph :
+InDegree - Edges coming in
+OutDegree - Edges going out
+
+## Total Degree Of Graph == 2 * Edges
+
+Edge Weight => Weight of Edge
+
+## Undirected Graph
+Input :
+N = Number of nodes = 5
+M = Number of Edges = 6
+
+Edges are given
+1, 2
+1, 3
+2, 4
+3, 4
+2, 5
+4, 5
+
+Output:
+2 ways to store graphs
+1. Matrix
+2. Adjacency List
+
+Matrix Way
+Mark edge as 1 for two connecting nodes
+for ex.
+1, 2
+1, 3
+2, 4
+3, 4
+2, 5
+4, 5
+
+If graph starts with 1-based index, then create matrix of N+1 size (since array is 0-based)
+adjacent[n+1][n+1]
+
+0   1   2   3   4   5
+
+1       1   1
+
+2   1           1   1
+
+3   1           1
+
+4       1   1       1
+5       1       1
+
+1 => represents edge between two nodes
+0 => represents no edge
+
+Space Complexity => (n+1) * (n+1) => O(n2) : Not Optimal
