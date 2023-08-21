@@ -15,14 +15,23 @@ public class UnDirectedGraph {
 
     private static void listStore(int n, int m, Scanner scanner) {
         //O(2M) => O(M)
+        //1 based indexing
+
         List<ArrayList<Integer>> list = new ArrayList<>();
-        // 1 based indexing
         for (int i = 0; i <= n; i++) {
+            list.add(new ArrayList<>());
+        }
+
+        for (int i = 0; i < m; i++) {
             int u = scanner.nextInt();
             int v = scanner.nextInt();
-            //u --- v
+
             list.get(u).add(v);
             list.get(v).add(u);
+        }
+
+        for (List<Integer> list1 : list) {
+            System.out.println(list1);
         }
     }
 

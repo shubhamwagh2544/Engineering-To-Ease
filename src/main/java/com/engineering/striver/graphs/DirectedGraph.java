@@ -15,13 +15,22 @@ public class DirectedGraph {
 
     private static void listStore(int n, int m, Scanner scanner) {
         //O(2M) => O(M)
-        List<ArrayList<Integer>> list = new ArrayList<>();
         // 1 based indexing
+
+        List<ArrayList<Integer>> list = new ArrayList<>();
         for (int i = 0; i <= n; i++) {
+            list.add(new ArrayList<>());
+        }
+
+        for (int i = 0; i < m; i++) {
             int u = scanner.nextInt();
             int v = scanner.nextInt();
-            // u ---> v
+
             list.get(u).add(v);
+        }
+
+        for (List list1 : list) {
+            System.out.println(list1);
         }
     }
 
