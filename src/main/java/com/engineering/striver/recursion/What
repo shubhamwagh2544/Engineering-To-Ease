@@ -1,0 +1,3 @@
+Recursion :
+when a function calls itself until a specific condition (base condition) is met
+(what if no condition to break iterative self method call => Stack Overflow Error / Segmentation Fault)
