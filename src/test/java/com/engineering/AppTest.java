@@ -1,4 +1,4 @@
-package com.engineering.;
+package com.engineering;
 
 import static org.junit.Assert.assertTrue;
 
