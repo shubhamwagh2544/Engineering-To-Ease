@@ -7,6 +7,14 @@ import java.util.Scanner;
 public class DirectedGraph {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        /*
+                1 - 2
+                1 - 3
+                3 - 4
+                2 - 4
+                2 - 5
+                4 - 5
+         */
         int n = 5;
         int m = 6;
         //matrixStore(n , m, scanner);
