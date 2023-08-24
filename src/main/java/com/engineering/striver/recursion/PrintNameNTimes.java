@@ -1,7 +1,5 @@
 package com.engineering.striver.recursion;
 
-import java.util.Scanner;
-
 public class PrintNameNTimes {
     public static void main(String[] args) {
         int n = ScannerProvider.scanner().nextInt();

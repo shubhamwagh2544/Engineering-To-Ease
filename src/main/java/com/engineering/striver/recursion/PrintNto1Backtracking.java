@@ -15,3 +15,10 @@ public class PrintNto1Backtracking {
         System.out.print(i+" ");
     }
 }
+/*
+        Backtracking tree/stack :
+        f(3, 1) -> 1
+        f(3, 2) -> 2
+        f(3, 3) -> 3
+        f(3, 4) -> exit
+ */
