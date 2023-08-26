@@ -8,22 +8,26 @@ public class QuickSort {
         int low = 0;
         int high = array.length - 1;
 
-        quickSort(array, low, high);
+        //ascending
+        //quickSortAsc(array, low, high);
+
+        //descending
+        quickSortDesc(array, low, high);
 
         System.out.println(Arrays.toString(array));
     }
 
-    private static void quickSort(int[] array, int low, int high) {
+    private static void quickSortAsc(int[] array, int low, int high) {
         if (low > high) {
             return;
         }
-        int partitionIndex = helperFunction(array, low, high);
+        int partitionIndex = helperFunctionAsc(array, low, high);
 
-        quickSort(array, low, partitionIndex-1);
-        quickSort(array, partitionIndex+1, high);
+        quickSortAsc(array, low, partitionIndex-1);
+        quickSortAsc(array, partitionIndex+1, high);
     }
 
-    private static int helperFunction(int[] array, int low, int high) {
+    private static int helperFunctionAsc(int[] array, int low, int high) {
         int pivot = array[low];
         int i = low+1;
         int j = high;
@@ -61,6 +65,37 @@ public class QuickSort {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
+    }
+
+    private static void quickSortDesc(int[] array, int low, int high) {
+        if (low > high) {
+            return;
+        }
+        int partitionIndex = helperFunctionDesc(array, low, high);
+
+        quickSortDesc(array, low, partitionIndex-1);
+        quickSortDesc(array, partitionIndex+1, high);
+    }
+
+    private static int helperFunctionDesc(int[] array, int low, int high) {
+        int pivot = array[low];
+        int i = low+1;
+        int j = high;
+
+        while (i < j) {
+            while (array[i] >= pivot && i < high) {
+                i++;
+            }
+            while (array[j] <= pivot && j > low) {
+                j--;
+            }
+            if (i < j) {
+                swap(array, i, j);
+            }
+        }
+
+        swap(array, low, j);
+        return j;
     }
 }
 
