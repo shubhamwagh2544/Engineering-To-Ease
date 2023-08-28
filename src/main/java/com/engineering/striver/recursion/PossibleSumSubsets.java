@@ -6,18 +6,20 @@ import java.util.List;
 public class PossibleSumSubsets {
     public static void main(String[] args) {
         int[] array = {1, 2, 1};
+        //int[] array = {2, 3, 6, 7};
         int n = array.length;
 
         int sum = 2;
+        //int sum = 7;
         int index = 0;
         List<Integer> list = new ArrayList<>();
-        //findAllPossibleSumSubsets(index, array, n, 0, sum, list);
+        findAllPossibleSumSubsets(index, array, n, 0, sum, list);
 
         //only one subsequence
         //findOnePossibleSumSubset(index, array, n, 0, sum, list);
 
         //total count of subsequences
-        System.out.println(findTotalCountOfAllPossibleSubsequences(index, array, n, 0, sum, list));
+        //System.out.println(findTotalCountOfAllPossibleSubsequences(index, array, n, 0, sum, list));
     }
 
     private static void findAllPossibleSumSubsets(int index, int[] array, int n, int currentSum, int sum, List<Integer> list) {
