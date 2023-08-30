@@ -1,6 +1,6 @@
 package com.engineering.striver.recursion;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class QuickSort {
     public static void main(String[] args) {
@@ -13,10 +13,10 @@ public class QuickSort {
 
         //ascending
         quickSortAsc(array, low, high);
+        System.out.println(Arrays.toString(array));
 
         //descending
         quickSortDesc(array, low, high);
-
         System.out.println(Arrays.toString(array));
     }
 
