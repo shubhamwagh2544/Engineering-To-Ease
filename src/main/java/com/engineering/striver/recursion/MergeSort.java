@@ -1,6 +1,8 @@
 package com.engineering.striver.recursion;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
 
 public class MergeSort {
     public static void main(String[] args) {
@@ -8,6 +10,8 @@ public class MergeSort {
         int low = 0;
         int high = array.length-1;
 
+        //TC : O(NlogN)
+        //SC : O(N)
         mergeSort(array, low, high);
 
         System.out.println(Arrays.toString(array));
@@ -21,12 +25,11 @@ public class MergeSort {
         mergeSort(array, low, mid);
         mergeSort(array, mid+1, high);
 
-
         merge(array, low, mid, high);
     }
 
     private static void merge(int[] array, int low, int mid, int high) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();     //O(N)
         int left = low;
         int right = mid+1;
 

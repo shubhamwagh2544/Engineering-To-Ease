@@ -8,6 +8,9 @@ public class QuickSort {
         int low = 0;
         int high = array.length - 1;
 
+        //TC : O(NlogN) (Worst Case TC : O(N^2) to sort array asc if already sorted desc)
+        //SC : O(logN) (Worst Case SC : O(N) if array is desc sorted)
+
         //ascending
         quickSortAsc(array, low, high);
 
