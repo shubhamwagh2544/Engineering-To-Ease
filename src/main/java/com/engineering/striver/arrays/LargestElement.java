@@ -26,7 +26,7 @@ public class LargestElement {
     private static void largestElementInArray1(int[] array, int n) {
         int max = array[0];
         for (int i = 1; i < n; i++) {
-            if (array[i] >= max) {
+            if (array[i] > max) {
                 max = array[i];
             }
         }
@@ -36,7 +36,7 @@ public class LargestElement {
     private static void largestElementInArray2(int[] array) {
         int max = -1;
         for (int element : array) {
-            if (element >= max) {
+            if (element > max) {
                 max = element;
             }
         }
