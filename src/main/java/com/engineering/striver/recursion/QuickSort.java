@@ -9,7 +9,7 @@ public class QuickSort {
         int high = array.length - 1;
 
         //ascending
-        //quickSortAsc(array, low, high);
+        quickSortAsc(array, low, high);
 
         //descending
         quickSortDesc(array, low, high);
