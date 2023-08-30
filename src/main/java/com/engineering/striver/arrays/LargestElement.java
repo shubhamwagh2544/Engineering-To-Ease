@@ -9,7 +9,7 @@ public class LargestElement {
 
         //brute
         //TC : O(NLogN)
-        //SC : O(N)
+        //SC : O(N) or O(logN)
         largestElement(array, n);
 
         //optimal
