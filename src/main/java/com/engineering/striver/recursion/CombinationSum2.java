@@ -1,17 +1,19 @@
 package com.engineering.striver.recursion;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class CombinationSum2 {
     public static void main(String[] args) {
-        int[] array = {1, 1, 1, 2, 2};
+        //int[] array = {1, 1, 1, 2, 2};
+        int[] array = {2, 1, 1, 2, 1};
         int n = array.length;
 
+        //what if sort the array beforehand -> we do not need LinkedHashSet
+        Arrays.sort(array);
+
         int target = 4;
-        Set<List<Integer>> ans = new LinkedHashSet<>();
+        //Set<List<Integer>> ans = new LinkedHashSet<>();
+        Set<List<Integer>> ans = new HashSet<>();
         combinationSum(0, target, ans, array, n, new ArrayList<>());
 
         System.out.println(ans);
