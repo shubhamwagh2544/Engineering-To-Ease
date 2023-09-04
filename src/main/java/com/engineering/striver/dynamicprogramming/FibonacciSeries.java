@@ -2,9 +2,6 @@ package com.engineering.striver.dynamicprogramming;
 
 import com.engineering.striver.recursion.ScannerProvider;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class FibonacciSeries {
     public static void main(String[] args) {
         int n = ScannerProvider.scanner().nextInt();
