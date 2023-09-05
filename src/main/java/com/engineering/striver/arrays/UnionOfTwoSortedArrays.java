@@ -24,9 +24,9 @@ public class UnionOfTwoSortedArrays {
 
     private static void better(int[] array1, int[] array2, int n1, int n2) {
         List<Integer> list = new ArrayList<>();
-
         int i = 0;
         int j = 0;
+
         while (i < n1 && j < n2) {
             if (array1[i] <= array2[j]) {
                 if (list.isEmpty() || list.get(list.size()-1) != array1[i]) {
