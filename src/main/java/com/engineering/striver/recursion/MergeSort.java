@@ -54,8 +54,10 @@ public class MergeSort {
             right++;
         }
 
+        int index = 0;
         for (int i = low; i <= high; i++) {
-            array[i] = list.get(i-low);
+            //array[i] = list.get(i-low);
+            array[i] = list.get(index++);
         }
     }
 
