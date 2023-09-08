@@ -3,6 +3,7 @@ package com.engineering.leetcode.september23;
 import com.engineering.striver.recursion.ScannerProvider;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class PascalTriangle {
@@ -12,7 +13,30 @@ public class PascalTriangle {
 
         //brute(num, ans);
 
-        optimal(num, ans);
+        //optimal(num, ans);
+
+        recursiveWay(num, ans);
+        ans.forEach(list -> System.out.println(list));
+    }
+
+    private static void recursiveWay(int num, List<List<Integer>> ans) {
+        if (num == 1) {
+            ans.add(Arrays.asList(1));
+            return;
+        }
+
+        recursiveWay(num-1, ans);
+        List<Integer> list = new ArrayList<>();
+
+        for (int i = 0; i < num; i++) {
+            list.add(1);
+        }
+
+        for (int i = 1; i < num-1; i++) {
+            list.set(i, ans.get(num-2).get(i) + ans.get(num-2).get(i-1));
+        }
+
+        ans.add(list);
     }
 
     private static void optimal(int num, List<List<Integer>> ans) {
