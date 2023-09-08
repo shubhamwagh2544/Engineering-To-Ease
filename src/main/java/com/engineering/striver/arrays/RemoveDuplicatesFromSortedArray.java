@@ -7,7 +7,6 @@ public class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
         //int[] array = {1, 1, 2, 2, 2, 3, 3};
         int[] array = {1, 2};
-
         int n = array.length;
 
         //TC : O(n)
