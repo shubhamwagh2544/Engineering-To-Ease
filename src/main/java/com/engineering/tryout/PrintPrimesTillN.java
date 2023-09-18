@@ -19,12 +19,11 @@ public class PrintPrimesTillN {
     }
 
     private static void optimal(int n) {
-
-
+        //todo: write optimal
     }
 
     private static void better(int n) {
-
+        //todo: write better
     }
 
     private static void brute(int n) {
