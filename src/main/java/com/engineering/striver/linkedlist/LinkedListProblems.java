@@ -224,38 +224,35 @@ public class LinkedListProblems {
         return node;
     }
 
-    private static void checkIfLinkedListPalindrome() {
-
+    private static boolean checkIfLinkedListPalindrome(ListNode head) {
+        //reverse half LL and cross-check values
+        if (head == null || head.next == null) {
+            return true;
+        }
+        return false;
     }
 
     public static void main(String[] args) {
-        //input
-        serialInput();
-        //palindromeInput();
+        //serialInput();                        //input
+        palindromeInput();
 
-        //output
-        //printList();
+        //printList();                          //output
 
-        //middle element of list
-        //findMiddleOfLinkedList();
+        //findMiddleOfLinkedList();             //middle element
 
-        //insert
-        //insertInBeginning();
+        //insertInBeginning();                  //insert
         //insertInEnd();
         //insertInMiddle();
 
-        //delete
-        //deleteNodeInBeginning();
+        //deleteNodeInBeginning();              //delete
         //deleteNodeInEnd();
         //deleteNodeInMiddle();
 
-        //reverse
-        //reverseLinkedListIterative();
+        //reverseLinkedListIterative();         //reverse
         //reverseLinkedListRecursive();
-        reverseLinkedListRecursiveAnother();
+        //reverseLinkedListRecursiveAnother();
 
-        //palindrome
-        //checkIfLinkedListPalindrome();
+        checkIfLinkedListPalindrome(head);          //palindrome
 
     }
 
