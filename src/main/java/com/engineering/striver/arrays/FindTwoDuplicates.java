@@ -9,9 +9,29 @@ public class FindTwoDuplicates {
 
         //TC : O(n * n)
         //SC : O(1)
-        brute(array, array.length);
+        //brute(array, array.length);
 
-        better(array, array.length);
+        //TC : O(n) + O(m) where m is hashmap size
+        //SC : O(m)
+        //better(array, array.length);
+
+        //TC : O(n)
+        //SC : O(n)
+        better2(array, array.length);
+    }
+
+    private static void better2(int[] array, int length) {
+        //visited array of same size
+        boolean[] visited = new boolean[length+1];
+
+        for (int element : array) {
+            if (!visited[element]) {
+                visited[element] = true;
+            }
+            else {
+                System.out.println(element);
+            }
+        }
     }
 
     private static void better(int[] array, int length) {
