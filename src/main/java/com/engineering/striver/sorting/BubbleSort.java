@@ -21,7 +21,7 @@ public class BubbleSort {
                     flag = true;
                 }
             }
-            if (!flag) break;                       //already sorted array
+            if (!flag) break;                       //already sorted array : Best Case : O(n)
         }
 
         System.out.println(Arrays.toString(array));
