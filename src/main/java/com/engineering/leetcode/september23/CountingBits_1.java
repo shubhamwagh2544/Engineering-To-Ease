@@ -4,7 +4,7 @@ import com.engineering.striver.recursion.ScannerProvider;
 
 import java.util.Arrays;
 
-public class CountingBits {
+public class CountingBits_1 {
     public static void main(String[] args) {
         int n = ScannerProvider.scanner().nextInt();
 

@@ -2,7 +2,7 @@ package com.engineering.leetcode.september23;
 
 import java.util.Arrays;
 
-public class CombinationSum4 {
+public class CombinationSum4_9 {
     public static void main(String[] args) {
         int[] array = {1, 2, 3};
         int target = 4;

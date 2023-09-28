@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class PascalTriangle {
+public class PascalTriangle_8 {
     public static void main(String[] args) {
         int num = ScannerProvider.scanner().nextInt();
         List<List<Integer>> ans = new ArrayList<>();
