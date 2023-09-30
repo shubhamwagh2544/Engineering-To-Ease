@@ -20,18 +20,18 @@ public class BinarySearch {
             return new Found(String.format("%s not found in array", target));
         }
 
-        int mid = (low + high) / 2;
+        int mid = low + (high-low) / 2;
         if (array[mid] == target) return new Found(String.format("%s found at %s", target, mid));
-        else if (target > array[mid]) return recursiveWay(array, mid+1, high, target);
+        else if (array[mid] < target) return recursiveWay(array, mid+1, high, target);
         else return recursiveWay(array, low, mid-1, target);
     }
 
     private static Found iterativeWay(int[] array, int low, int high, int target) {
         while (low <= high) {
-            int mid = (low + high) / 2;
+            int mid = low + (high-low) / 2;
 
             if (array[mid] == target) return new Found(String.format("%s found at %s", target, mid));
-            else if (target > array[mid]) low = mid + 1;
+            else if (array[mid] < target) low = mid + 1;
             else high = mid - 1;
         }
         return new Found(String.format("%s not found in array", target));
