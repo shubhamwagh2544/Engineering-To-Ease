@@ -1,6 +1,6 @@
 package com.engineering.striver.binarysearch;
 
-public class LastOccurrence {
+public class LastOccurrence {           //upper bound
     public static void main(String[] args) {
         int[] array = {3, 4, 13, 13, 13, 20, 40};
         int target = 13;
@@ -13,12 +13,14 @@ public class LastOccurrence {
 
         while (low <= high) {
             int mid = (low + high) / 2;
-            if (array[mid] <= target) {
+            if (array[mid] == target) {
                 ans = mid;
                 low = mid+1;
             }
+            else if (array[mid] < target) low = mid+1;
             else high = mid-1;
         }
+
         System.out.println(ans);
     }
 }
