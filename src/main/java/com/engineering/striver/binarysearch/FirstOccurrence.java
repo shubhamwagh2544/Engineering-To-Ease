@@ -9,18 +9,18 @@ public class FirstOccurrence {          //lower bound
     }
 
     private static void getFirstOccurrence(int[] array, int low, int high, int target) {
-        int ans = array.length;
+        int ans = -1;
 
         while (low <= high) {
             int mid = (low + high) / 2;
-            if (array[mid] >= target) {
+            if (array[mid] == target) {
                 ans = mid;
-                high = mid-1;
+                high = mid-1;       //search left
             }
+            else if (array[mid] > target) high = mid-1;     //search left
             else low = mid+1;
         }
 
-        if (ans == array.length || array[ans] != target) System.out.println(-1);
-        else System.out.println(ans);
+        System.out.println(ans);
     }
 }

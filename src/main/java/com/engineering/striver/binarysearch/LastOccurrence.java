@@ -15,9 +15,9 @@ public class LastOccurrence {           //upper bound
             int mid = (low + high) / 2;
             if (array[mid] == target) {
                 ans = mid;
-                low = mid+1;
+                low = mid+1;        //search right
             }
-            else if (array[mid] < target) low = mid+1;
+            else if (array[mid] < target) low = mid+1;      //search right
             else high = mid-1;
         }
 
