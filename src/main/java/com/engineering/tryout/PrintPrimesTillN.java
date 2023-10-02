@@ -1,6 +1,6 @@
 package com.engineering.tryout;
 
-import com.engineering.striver.recursion.ScannerProvider;
+import com.engineering.challenges.recursion.ScannerProvider;
 
 public class PrintPrimesTillN {
     public static void main(String[] args) {

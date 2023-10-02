@@ -1,6 +1,6 @@
 package com.engineering.leetcode.september23;
 
-import com.engineering.striver.recursion.ScannerProvider;
+import com.engineering.challenges.recursion.ScannerProvider;
 
 import java.util.ArrayList;
 import java.util.Arrays;
