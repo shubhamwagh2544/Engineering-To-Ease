@@ -1,6 +1,6 @@
 package com.engineering.leetcode.october23;
 
-public class ReverseWordsInStringIII {
+public class ReverseWordsInStringIII_1 {
     public static void main(String[] args) {
         String s = "Let's take LeetCode contest";
 
