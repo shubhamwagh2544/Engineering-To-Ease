@@ -2,4 +2,4 @@
 a look into solving something new everyday !
 
 - LeetCode
-- Striver Playlists
+- DSA Playlists
