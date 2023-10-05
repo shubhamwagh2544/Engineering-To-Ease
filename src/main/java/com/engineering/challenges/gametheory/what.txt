@@ -1,0 +1,5 @@
+Game Theory : game based on certain rules and the task is often to find the winner
+1. 2 player game
+2. perfect information
+3. optimal moves
+4. win or lose or draw
