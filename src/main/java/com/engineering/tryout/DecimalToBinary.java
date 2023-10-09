@@ -1,7 +1,5 @@
 package com.engineering.tryout;
 
-import com.engineering.challenges.recursion.ScannerProvider;
-
 public class DecimalToBinary {
     public static void main(String[] args) {
         int n = ScannerProvider.scanner().nextInt();

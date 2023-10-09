@@ -1,4 +1,4 @@
-package com.engineering.challenges.recursion;
+package com.engineering.tryout;
 
 import java.util.Scanner;
 

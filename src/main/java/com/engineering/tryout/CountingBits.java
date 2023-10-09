@@ -1,7 +1,5 @@
 package com.engineering.tryout;
 
-import com.engineering.challenges.recursion.ScannerProvider;
-
 import java.util.Arrays;
 
 public class CountingBits {
