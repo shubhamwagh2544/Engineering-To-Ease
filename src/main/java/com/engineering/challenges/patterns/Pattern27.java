@@ -1,6 +1,6 @@
 package com.engineering.challenges.patterns;
 
-import com.engineering.challenges.recursion.ScannerProvider;
+import com.engineering.tryout.ScannerProvider;
 
 /*
                     5 5 5 5 5 5 5 5 5

@@ -1,5 +1,7 @@
 package com.engineering.challenges.recursion;
 
+import com.engineering.tryout.ScannerProvider;
+
 public class SumOfFirstN {
     public static void main(String[] args) {
         int n = ScannerProvider.scanner().nextInt();

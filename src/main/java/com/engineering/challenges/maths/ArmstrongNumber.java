@@ -1,6 +1,6 @@
 package com.engineering.challenges.maths;
 
-import com.engineering.challenges.recursion.ScannerProvider;
+import com.engineering.tryout.ScannerProvider;
 
 public class ArmstrongNumber {
     public static void main(String[] args) {

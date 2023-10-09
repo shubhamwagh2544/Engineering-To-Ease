@@ -1,6 +1,6 @@
 package com.engineering.challenges.maths;
 
-import com.engineering.challenges.recursion.ScannerProvider;
+import com.engineering.tryout.ScannerProvider;
 
 import java.util.ArrayList;
 import java.util.Collections;

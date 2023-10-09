@@ -1,5 +1,7 @@
 package com.engineering.challenges.recursion;
 
+import com.engineering.tryout.ScannerProvider;
+
 public class PrintNto1Linear {
     public static void main(String[] args) {
         int N = ScannerProvider.scanner().nextInt();

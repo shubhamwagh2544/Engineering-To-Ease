@@ -1,6 +1,6 @@
 package com.engineering.challenges.gametheory;
 
-import com.engineering.challenges.recursion.ScannerProvider;
+import com.engineering.tryout.ScannerProvider;
 
 /*
 Two players Alice and Bob are playing a game. They have a pile with n coins in it.

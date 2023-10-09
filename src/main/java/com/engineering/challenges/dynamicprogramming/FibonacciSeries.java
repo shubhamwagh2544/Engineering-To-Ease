@@ -1,6 +1,6 @@
 package com.engineering.challenges.dynamicprogramming;
 
-import com.engineering.challenges.recursion.ScannerProvider;
+import com.engineering.tryout.ScannerProvider;
 
 public class FibonacciSeries {
     public static void main(String[] args) {
