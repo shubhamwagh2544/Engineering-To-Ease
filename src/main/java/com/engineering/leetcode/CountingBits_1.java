@@ -1,6 +1,6 @@
-package com.engineering.leetcode.september23;
+package com.engineering.leetcode;
 
-import com.engineering.challenges.recursion.ScannerProvider;
+import com.engineering.tryout.ScannerProvider;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.engineering.leetcode.october23;
+package com.engineering.leetcode;
 
 public class NumberOfGoodPairs_3 {        //pair (i, j) is called good if arr[i] == arr[j] and i < j
     public static void main(String[] args) {

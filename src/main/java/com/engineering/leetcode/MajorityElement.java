@@ -1,6 +1,8 @@
-package com.engineering.leetcode.xtra;
+package com.engineering.leetcode;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MajorityElement {          //element that appears more than n/2 times
     public static void main(String[] args) {

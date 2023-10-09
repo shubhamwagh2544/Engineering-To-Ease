@@ -1,4 +1,4 @@
-package com.engineering.leetcode.september23;
+package com.engineering.leetcode;
 
 import java.util.Arrays;
 

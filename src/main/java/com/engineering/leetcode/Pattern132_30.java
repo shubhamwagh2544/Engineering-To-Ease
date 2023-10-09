@@ -1,4 +1,4 @@
-package com.engineering.leetcode.september23;
+package com.engineering.leetcode;
 
 public class Pattern132_30 {
     public static void main(String[] args) {
