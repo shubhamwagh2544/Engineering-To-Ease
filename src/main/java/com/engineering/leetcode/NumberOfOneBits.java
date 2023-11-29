@@ -3,8 +3,8 @@ package com.engineering.leetcode;
 import com.engineering.tryout.ScannerProvider;
 
 public class NumberOfOneBits {
-    //efficient
     static int hammingWeight(int n) {
+        //brian kernighan's algorithm : finding count of set bits in number
         int count = 0;
         while (n != 0) {
             n = n & (n - 1);
