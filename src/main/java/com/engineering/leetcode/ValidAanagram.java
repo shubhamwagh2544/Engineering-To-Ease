@@ -3,6 +3,9 @@ public class ValidAnagram {
 	//using hashmap
 	Map<Character, Integer> map = new HashMap<>();
 
+	//length check
+	if (s.length() != t.length()) return false;
+
         for (char c : s.toCharArray()) {
             map.put(c, map.getOrDefault(c, 0)+1);
         }
@@ -24,6 +27,9 @@ public class ValidAnagram {
 	//using frequency array
 	int[] f = new int[26];
 
+	//length check
+	if (s.length() != t.length()) return false;
+
         for (char c : s.toCharArray()) {
             f[c-'a']++;
         }
@@ -38,5 +44,43 @@ public class ValidAnagram {
 
         return true;
 	
+	}
+
+	public boolean isAnagram(String s, String t) {
+	//using array sorting
+
+	//length check
+	if (s.length() != t.length()) return false;
+
+	char[] one = s.toCharArray();
+        char[] two = t.toCharArray(); 
+        
+        Arrays.sort(one);
+        Arrays.sort(two);
+
+        return Arrays.equals(one, two);
+	}
+
+	public boolean isAnagram(String s, String t) {
+	//using two loops : maintain a counter
+	int[] f = new int[26];
+	int count = 0;
+	
+	//length check
+	if (s.length() != t.length()) return false;
+		
+	for (char c: s.toCharArray()) {
+		f[c-'a']++;
+		count++;
+	}		
+	
+	for (char c: t.toCharArray()) {
+		if (f[c-'a'] > 0) {
+			f[c-'a']--;
+			count--;
+		}
+	}	
+	
+	return count == 0;
 	}
 }
