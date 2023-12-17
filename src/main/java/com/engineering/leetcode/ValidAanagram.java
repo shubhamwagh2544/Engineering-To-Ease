@@ -1,6 +1,7 @@
 public class ValidAnagram {
 	public boolean isAnagram(String s, String t) {
-		Map<Character, Integer> map = new HashMap<>();
+	//using hashmap
+	Map<Character, Integer> map = new HashMap<>();
 
         for (char c : s.toCharArray()) {
             map.put(c, map.getOrDefault(c, 0)+1);
@@ -17,5 +18,25 @@ public class ValidAnagram {
         }
 
         return true;
+	}
+
+	public boolean isAnagram(String s, String t) {
+	//using frequency array
+	int[] f = new int[26];
+
+        for (char c : s.toCharArray()) {
+            f[c-'a']++;
+        }
+
+        for (char c : t.toCharArray()) {
+            f[c-'a']--;
+        }
+
+        for (int i = 0; i < f.length; i++) {
+            if (f[i] != 0) return false;
+        }       
+
+        return true;
+	
 	}
 }
