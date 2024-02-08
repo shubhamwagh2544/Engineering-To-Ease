@@ -2,3 +2,8 @@
 target
 tigercodes.iml
 *.DS_Store
+.vscode
+${dir}
+dist
+null
+target
