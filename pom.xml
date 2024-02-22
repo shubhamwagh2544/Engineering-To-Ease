@@ -9,6 +9,11 @@
   <version>1.0-SNAPSHOT</version>
   <name>tigercodes</name>
 
+  <build>
+    <sourceDirectory>/Users/shubhamwagh/IdeaProjects/tigercodes</sourceDirectory>
+    <outputDirectory>/Users/shubhamwagh/IdeaProjects/tigercodes/target</outputDirectory>
+  </build>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
