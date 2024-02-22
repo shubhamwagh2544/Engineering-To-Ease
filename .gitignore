@@ -7,3 +7,16 @@ ${dir}
 dist
 null
 target
+arrays/*.class
+binarysearch/*.class
+dynamicprogramming/*.class
+gametheory/*.class
+graphs/*.class
+leetcode/*.class
+linkedlist/*.class
+maths/*.class
+patterns/*.class
+recursion/*.class
+sorting/*.class
+strings/*.class
+tryout/*.class
