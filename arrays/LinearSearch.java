@@ -1,5 +1,3 @@
-package com.engineering.challenges.arrays;
-
 public class LinearSearch {
     public static void main(String[] args) {
         int[] array = {1, 4, 3, 2, 5};

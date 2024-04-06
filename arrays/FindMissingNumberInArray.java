@@ -1,5 +1,3 @@
-package com.engineering.challenges.arrays;
-
 public class FindMissingNumberInArray {
     public static void main(String[] args) {
         int[] array= {1, 2, 4, 5};

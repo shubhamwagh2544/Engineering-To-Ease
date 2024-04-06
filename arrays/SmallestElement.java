@@ -1,5 +1,3 @@
-package com.engineering.challenges.arrays;
-
 public class SmallestElement {
     public static void main(String[] args) {
         int[] array = {2, 5, 1, 3, 5, 1, 3, 5};

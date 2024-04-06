@@ -1,5 +1,3 @@
-package com.engineering.challenges.arrays;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;

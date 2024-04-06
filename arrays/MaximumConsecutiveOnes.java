@@ -1,5 +1,3 @@
-package com.engineering.challenges.arrays;
-
 public class MaximumConsecutiveOnes {
     public static void main(String[] args) {
         int[] array = {1, 1, 0, 1, 1, 1};
