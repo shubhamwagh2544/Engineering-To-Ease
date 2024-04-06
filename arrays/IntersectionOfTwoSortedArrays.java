@@ -45,7 +45,7 @@ public class IntersectionOfTwoSortedArrays {
         int i = 0;
 
         while (i < n1) {
-            if (isPresent(array1[i], array2)) {
+            if (isPresentBS(array1[i], array2, 0, array2.length-1)) {
                 list.add(array1[i]);
             }
             i++;
@@ -54,6 +54,7 @@ public class IntersectionOfTwoSortedArrays {
         System.out.println(list);
     }
 
+    @SuppressWarnings("unused")
     private static boolean isPresent(int el, int[] array2) {
         boolean[] visited = new boolean[array2.length];
 
