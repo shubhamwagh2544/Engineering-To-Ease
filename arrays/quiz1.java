@@ -22,7 +22,7 @@ public class quiz1 {
     static void swap(int a, int b) {    // variables of two functions are not connected
         int temp = a;
         a = b;
-        b = a;
+        b = temp;
     }
     
     static void swapArray(int[] arr) {

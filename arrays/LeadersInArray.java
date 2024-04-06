@@ -5,8 +5,9 @@ public class LeadersInArray {
         int[] array = {10, 22, 12, 3, 0, 6};                //Sol : 22 12 6
         int n = array.length-1;
 
-        //printLeadersIterative(array, n);
-        //printLeadersRecursive(array, n, -1);
+        printLeadersIterative(array, n);
+        
+        printLeadersRecursive(array, n, -1);
 
         printLeadersUsingStack(array, n);
     }

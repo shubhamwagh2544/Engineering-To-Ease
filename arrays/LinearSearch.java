@@ -1,7 +1,6 @@
 public class LinearSearch {
     public static void main(String[] args) {
         int[] array = {1, 4, 3, 2, 5};
-        int n = array.length;
 
         int target = 4;
         linearSearch(array, target);

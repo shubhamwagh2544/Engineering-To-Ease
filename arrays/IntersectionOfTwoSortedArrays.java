@@ -45,7 +45,7 @@ public class IntersectionOfTwoSortedArrays {
         int i = 0;
 
         while (i < n1) {
-            if (isPresentBS(array1[i], array2, 0, array2.length-1)) {
+            if (isPresent(array1[i], array2)) {
                 list.add(array1[i]);
             }
             i++;

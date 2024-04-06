@@ -7,11 +7,11 @@ public class FindTwoDuplicates {
 
         //TC : O(n * n)
         //SC : O(1)
-        //brute(array, array.length);
+        brute(array, array.length);
 
         //TC : O(n) + O(m) where m is hashmap size
         //SC : O(m)
-        //better(array, array.length);
+        better(array, array.length);
 
         //TC : O(n)
         //SC : O(n)
