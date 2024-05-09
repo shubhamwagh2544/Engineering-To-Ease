@@ -1,0 +1,8 @@
+queues :
+    - sequential collection of values [ FIFO => First In First Out ]
+
+examples :
+    - queue of people
+    - printers
+    - CPU task scheduling
+    - callback queue in JS Runtime
