@@ -1,0 +1,6 @@
+sets:
+    - collection of unique values
+    - mix of different data types
+    - dynamic sized
+    - no insertion order
+    - iterables (for of loop)
