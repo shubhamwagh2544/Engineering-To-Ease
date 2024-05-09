@@ -125,4 +125,19 @@ console.log(slicedArray1)
 const slicedArray2 = arr.slice(2)
 console.log(slicedArray2)
 
-// splice: 
+// splice: remove/replace/add element in array
+// array.splice(start, deleteCount, item1, item2, ...)
+
+const yetAnotherNumberArray = [1, 2, 3, 4, 5]
+const deletedArr1 = yetAnotherNumberArray.splice(2, 1)      // deletion
+console.log("deletedArr1: ", deletedArr1)
+console.log("yetAnotherNumberArray: ", yetAnotherNumberArray)
+
+const deletedArr2 = yetAnotherNumberArray.splice(2, 1, "shubham")       // deletion + replacement
+console.log("deletedArr2: ", deletedArr2)
+console.log("yetAnotherNumberArray: ", yetAnotherNumberArray)
+
+
+const deletedArr3 = yetAnotherNumberArray.splice(2, 1, "shubham", "ramesh", 3, 4)       // deletion + replacement
+console.log("deletedArr3: ", deletedArr3)
+console.log("yetAnotherNumberArray: ", yetAnotherNumberArray)
