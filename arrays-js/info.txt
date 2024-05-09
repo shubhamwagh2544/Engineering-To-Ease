@@ -3,3 +3,15 @@ Arrays: data structure that can hold collection of values [mix of any data]
     - 0-indexed
     - interables
     - insertion order
+
+time complexity
+insert/remove in end: O(1) => Constant
+insert/remove in start: O(n) => Linear
+access/retrieval: O(1)
+Linear search: O(n)
+Binary search: O(logn)  => Logarithmic
+
+push() / pop() : O(1)
+shift() / unshift() / concat() / slice() / splice() : O(n)
+
+forEach() / map() / filter() / reduce() : O(n) => [if callback contains loop] => Quadratic TC
