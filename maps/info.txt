@@ -1,0 +1,4 @@
+maps :
+    - ordered collection of key-value pairs
+    - key-value can be of any data type
+    - iterables (for of loop)
