@@ -1,0 +1,17 @@
+Object:
+    - unordered collection of key-value pairs
+    - key : string or symbol data type
+    - value : any type
+    - value retrieval : . operator or [] operator
+    - not iterable like arrays but we can iterate over keys, values and entries
+    - if we use for of loop => error => TypeError: obj is not iterable
+
+Time Complexity
+insert : O(1)
+delete: O(1)
+access: O(1)
+Search: O(n)
+
+Object.keys() : O(n)
+Object.values() : O(n)
+Object.entries() : O(n)

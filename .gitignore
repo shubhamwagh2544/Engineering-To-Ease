@@ -20,3 +20,5 @@ recursion/*.class
 sorting/*.class
 strings/*.class
 tryout/*.class
+
+node_modules
