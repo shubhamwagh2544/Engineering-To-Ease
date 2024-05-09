@@ -1,0 +1,5 @@
+Arrays: data structure that can hold collection of values [mix of any data]
+    - resizable
+    - 0-indexed
+    - interables
+    - insertion order
