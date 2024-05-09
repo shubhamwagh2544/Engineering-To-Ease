@@ -1,0 +1,9 @@
+stacks :
+    - sequential collection of data [ LIFO => Last In First Out ]
+
+examples :
+    - stack of plates in restaurant
+    - browser pages navigation
+    - undo operation while typing
+    - expression conversion (prefix to postfix)
+    - call stack in JS Runtime
