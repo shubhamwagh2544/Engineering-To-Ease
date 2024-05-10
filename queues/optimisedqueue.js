@@ -7,14 +7,12 @@ class Queue {
     }
 
     // enqueue
-    enqueue(item) {
     enqueue(item) {                             // O(1)
         this.data[this.rear] = item
         this.rear++
     }
 
     // dequeue
-    dequeue() {
     dequeue() {                                 // O(1)
         const item = this.data[this.front]
         delete this.data[this.front]
