@@ -6,11 +6,13 @@ class Queue {
 
     // enqueue : add element in end
     enqueue(item) {
+    enqueue(item) {                                         // O(1)
         this.data.push(item)
     }
 
     // dequeue : remove element at front
     dequeue() {
+    dequeue() {                                             // O(n)
         return !this.isEmpty() ? this.data.shift() : null
     }
 
