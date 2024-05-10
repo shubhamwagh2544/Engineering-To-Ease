@@ -1,0 +1,10 @@
+Circular Queue :
+    - fixed size [ circular buffer => first element connected to last ]
+    - FIFO
+    - reuse the empty block created during dequeue operation
+
+examples
+    - clock
+    - audio and video streaming (data streaming)
+    - traffic lights (traffic management)
+
