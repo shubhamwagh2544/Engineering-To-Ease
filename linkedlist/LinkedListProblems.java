@@ -1,14 +1,15 @@
-package com.engineering.challenges.linkedlist;
-
 class ListNode {
     int value;
     ListNode next;
+
     public ListNode() {
     }
+
     public ListNode(int value) {
         this.value = value;
         this.next = null;
     }
+
     @Override
     public String toString() {
         return "ListNode{" +
@@ -17,6 +18,7 @@ class ListNode {
                 '}';
     }
 }
+
 public class LinkedListProblems {
 
     static ListNode head = null;
@@ -28,8 +30,7 @@ public class LinkedListProblems {
         if (head == null) {
             head = node;
             tail = node;
-        }
-        else {
+        } else {
             tail.next = node;
             tail = node;
         }
@@ -39,7 +40,7 @@ public class LinkedListProblems {
         ListNode current = head;
 
         while (current != null) {
-            //System.out.println(current.value);
+            // System.out.println(current.value);
             current = current.next;
         }
 
@@ -57,7 +58,7 @@ public class LinkedListProblems {
 
         System.out.println("Value : " + slow.value + " & next list of nodes : " + slow.next);
 
-        //OR
+        // OR
         int length = 0;
         ListNode curr = head;
         while (curr != null) {
@@ -67,7 +68,7 @@ public class LinkedListProblems {
 
         int i = 0;
         ListNode middle = head;
-        while (i < length/2) {
+        while (i < length / 2) {
             middle = middle.next;
             i++;
         }
@@ -145,10 +146,10 @@ public class LinkedListProblems {
     }
 
     private static void reverseLinkedListIterative() {
-        //take 3 pointers : current, prev and next
-        //1. Store the next node temporarily
-        //2. Reverse the direction of the pointer
-        //3. Move to the next node
+        // take 3 pointers : current, prev and next
+        // 1. Store the next node temporarily
+        // 2. Reverse the direction of the pointer
+        // 3. Move to the next node
 
         ListNode prev = null;
         ListNode next = null;
@@ -156,14 +157,14 @@ public class LinkedListProblems {
 
         while (current != null) {
 
-            next = current.next;            //1. Store the next node temporarily
-            current.next = prev;            //2. Reverse the direction of the pointer
+            next = current.next; // 1. Store the next node temporarily
+            current.next = prev; // 2. Reverse the direction of the pointer
 
-            prev = current;                 //3. Move to the next node
+            prev = current; // 3. Move to the next node
             current = next;
         }
 
-        System.out.println(prev);           //prev is now head of linked list
+        System.out.println(prev); // prev is now head of linked list
     }
 
     private static void reverseLinkedListRecursive() {
@@ -187,27 +188,28 @@ public class LinkedListProblems {
     private static void reverseLinkedListRecursiveAnother() {
         ListNode current = head;
         System.out.println(helperAnother(current));
-        //dry run
+        // dry run
         /*
-                10 -> 20 -> 30 -> null
-
-                node = 30
-                current = 20
-                20 -> 30
-                current.next = 30 (current.next.next = current : makes 30 point to 20)
-                current.next.next = current (30.next = 20) or 30 -> 20
-                current.next = null ( 20 next is null) or 30 -> 20 -> null
-                end
-
-                node = 30
-                current = 10
-                10 -> 20
-                current.next = 20 (current.next.next = : current makes 20 point to 10)
-                current.next.next = current (20.next = 10) or 20 -> 10
-                current.next = null ( 10 next is null) or 20 -> 10 -> null
-                end
-
-                now linked list becomes : 30 -> 20 -> 10 -> null with head at 30 (node : 30 is returned)
+         * 10 -> 20 -> 30 -> null
+         * 
+         * node = 30
+         * current = 20
+         * 20 -> 30
+         * current.next = 30 (current.next.next = current : makes 30 point to 20)
+         * current.next.next = current (30.next = 20) or 30 -> 20
+         * current.next = null ( 20 next is null) or 30 -> 20 -> null
+         * end
+         * 
+         * node = 30
+         * current = 10
+         * 10 -> 20
+         * current.next = 20 (current.next.next = : current makes 20 point to 10)
+         * current.next.next = current (20.next = 10) or 20 -> 10
+         * current.next = null ( 10 next is null) or 20 -> 10 -> null
+         * end
+         * 
+         * now linked list becomes : 30 -> 20 -> 10 -> null with head at 30 (node : 30
+         * is returned)
          */
     }
 
@@ -225,7 +227,7 @@ public class LinkedListProblems {
     }
 
     private static boolean checkIfLinkedListPalindrome(ListNode head) {
-        //reverse half LL and cross-check values
+        // reverse half LL and cross-check values
         if (head == null || head.next == null) {
             return true;
         }
@@ -233,26 +235,26 @@ public class LinkedListProblems {
     }
 
     public static void main(String[] args) {
-        //serialInput();                        //input
-        palindromeInput();
+        serialInput(); //input
+        //palindromeInput();
 
-        //printList();                          //output
+        printList(); //output
 
-        //findMiddleOfLinkedList();             //middle element
+        // findMiddleOfLinkedList(); //middle element
 
-        //insertInBeginning();                  //insert
-        //insertInEnd();
-        //insertInMiddle();
+        // insertInBeginning(); //insert
+        // insertInEnd();
+        // insertInMiddle();
 
-        //deleteNodeInBeginning();              //delete
-        //deleteNodeInEnd();
-        //deleteNodeInMiddle();
+        // deleteNodeInBeginning(); //delete
+        // deleteNodeInEnd();
+        // deleteNodeInMiddle();
 
-        //reverseLinkedListIterative();         //reverse
-        //reverseLinkedListRecursive();
-        //reverseLinkedListRecursiveAnother();
+        // reverseLinkedListIterative(); //reverse
+        // reverseLinkedListRecursive();
+        // reverseLinkedListRecursiveAnother();
 
-        checkIfLinkedListPalindrome(head);          //palindrome
+        //checkIfLinkedListPalindrome(head); // palindrome
 
     }
 
