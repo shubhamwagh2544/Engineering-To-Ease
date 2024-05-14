@@ -34,3 +34,10 @@ async function myFunction() {
 const newPromise = myFunction()
 const newRes = await newPromise
 console.log(newRes)
+
+
+console.log('another file variable')
+import { variable } from "./script2.js"
+console.log(variable)
+
+console.log(anotherVariable)
