@@ -1,2 +1,2 @@
 # Engineering-To-Ease
-a look into solving something new everyday !
+not sure what to put description :|
