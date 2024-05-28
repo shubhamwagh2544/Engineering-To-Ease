@@ -1,4 +1,4 @@
-function intersection(arr1, arr2) {
+function intersection(arr1: number[], arr2: number[]): number[] | [] {
     return arr1.filter(el => arr2.includes(el))
 
     /*const res = []
@@ -10,7 +10,7 @@ function intersection(arr1, arr2) {
     return res*/
 }
 
-const array9a = [1, 3, 5, 7];
-const array9b = [3, 5, 9];
+const array9a: number[] = [1, 3, 5, 7];
+const array9b: number[] = [3, 5, 9];
 
 console.log(intersection(array9a, array9b));  // Output: [3, 5]

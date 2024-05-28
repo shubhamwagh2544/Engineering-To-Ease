@@ -1,4 +1,4 @@
-function binarySearch(arr, el) {
+function binarySearch(arr: number[], el: number): number {
     let left = 0
     let right = arr.length - 1
 
@@ -8,6 +8,7 @@ function binarySearch(arr, el) {
         else if (arr[mid] < el) left = mid + 1
         else right = mid - 1
     }
+
     return -1
 }
 

@@ -1,4 +1,4 @@
-function reverseArray(arr) {
+function reverseArray(arr: number[]) {
     /*let start = 0
     let end = arr.length - 1
 
@@ -15,5 +15,5 @@ function reverseArray(arr) {
     return arr.reverse()
 }
 
-const array4 = [1, 3, 7, 2, 5];
+const array4: number[] = [1, 3, 7, 2, 5];
 console.log(reverseArray(array4));  // Output: [5, 2, 7, 3, 1]

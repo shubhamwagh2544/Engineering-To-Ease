@@ -1,4 +1,4 @@
-function reverseString(str) {
+function reverseString(str: string) {
     /*let newStr = ''
     for (let i = 0; i < str.length; i++) {
         newStr = str.charAt(i) + newStr
@@ -8,5 +8,5 @@ function reverseString(str) {
     return str.split('').reverse().join('')
 }
 
-const string1 = "hello";
-console.log(reverseString(string1));  // Output: "olleh"
+const str: string = "hello";
+console.log(reverseString(str));  // Output: "olleh"

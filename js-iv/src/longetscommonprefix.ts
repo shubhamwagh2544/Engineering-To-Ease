@@ -1,4 +1,4 @@
-function longestCommonPrefix(str) {
+function longestCommonPrefix(str: string[]) {
     str.sort()
     let i = 0
     let length = str[0].length
@@ -8,5 +8,5 @@ function longestCommonPrefix(str) {
     return str[0].substring(0, i)
 }
 
-const strings1 = ["flower", "flow", "flight"];
+const strings1: string[] = ["flower", "flow", "flight"];
 console.log(longestCommonPrefix(strings1));  // Output: "fl"

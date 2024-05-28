@@ -1,5 +1,5 @@
-function firstNonRepeatingCharacter(str) {
-    const res = {}
+function firstNonRepeatingCharacter(str: string): string | undefined {
+    const res: { [key: string]: number } = {}
     for (let char of str) {
         res[char] = (res[char] || 0) + 1
     }
