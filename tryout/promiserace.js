@@ -26,9 +26,10 @@ function chain3() {
 // Promise.race => Returns a promise that resolves or rejects as soon as one of the promises in the iterable resolves or rejects.
 
 const promise = Promise.race([chain1(), chain2(), chain3()])
-promise.then((data) => {
-    console.log(data)                   // resolved 1
-})
+promise
+    .then((data) => {
+        console.log(data)                   // resolved 1
+    })
     .catch((err) => {
         console.log('err', err)
     })
