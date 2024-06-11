@@ -66,3 +66,16 @@ Object.defineProperty allows you to control whether properties are writable, enu
 You can define getter and setter functions for properties
 You can create properties that do not appear during enumeration of the object's properties.
 */
+
+const person = {
+    name: 'Lydia'
+}
+
+Object.defineProperty(person, 'name', {
+    value: 'Margot',
+    enumerable: true,
+    configurable: true,
+    writable: true
+})
+
+console.log(person.name)            // Margot
