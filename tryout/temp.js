@@ -78,3 +78,29 @@ Hence object becomes: obj = { "1": "c" }
 
 // console.log(Number("7*3"))      // NaN
 // console.log(parseInt("7*3"))    // 7
+
+
+// const arr = new Array(4)
+// console.log(arr.length)             // 4
+// arr.forEach((val) => console.log(val))        // doesnt run since no indexes
+
+// const newarr = [...new Array(4)]
+// newarr.forEach(val => console.log(val))      // works => undefined
+
+// const arr2 = new Array(4).fill(0)
+// arr2.forEach(val => console.log(val))        // works => 0
+
+
+// const obj1 = {
+//     a: 1,
+//     b: 2
+// }
+
+// const obj2 = {
+//     b: 3,
+//     c: 4
+// }
+
+// const mergedObj = { ...obj1, ...obj2 }
+
+// console.log(mergedObj)                      // { a: 1, b: 3, c: 4 }
