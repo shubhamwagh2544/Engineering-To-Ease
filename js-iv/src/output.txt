@@ -1,0 +1,3 @@
+Hello, World!
+Writing to a stream is easy.
+This is the end of the stream.
