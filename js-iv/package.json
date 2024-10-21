@@ -9,7 +9,9 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^5.14.0",
-    "axios": "^1.7.2",
+    "@types/express": "^5.0.0",
+    "axios": "1.7.4",
+    "express": "^4.21.1",
     "helpful-decorators": "^2.1.0",
     "lodash": "^4.17.21",
     "mongoose": "^8.4.1",
